@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.SpotMeet" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/brand_secondary</item>
+        <item name="colorAccent">@color/brand_accent</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <style name="Theme.SpotMeet" parent="Base.Theme.SpotMeet" />
+
+    <!-- EditText Style -->
+    <style name="SpotMeetEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/bg_input</item>
+        <item name="boxStrokeColor">@color/border</item>
+        <item name="hintTextColor">@color/text_hint</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="SpotMeetButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/brand_primary</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <!-- Splash Theme -->
+    <style name="Theme.SpotMeet.Splash" parent="Theme.SpotMeet">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

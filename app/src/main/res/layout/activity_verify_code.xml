@@ -1,0 +1,258 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_verify_code_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/verify_scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:paddingTop="80dp"
+        android:paddingBottom="40dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:id="@+id/verify_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="36dp">
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/bg_logo" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="📧"
+                    android:textSize="34sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_verify_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Check Your Email"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_verify_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Enter the 6-digit code sent to\nyour email address"
+                android:textColor="#B0B0CC"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btn_change_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Mistyped? Change email here"
+                android:textColor="#B388FF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Card -->
+        <LinearLayout
+            android:id="@+id/verify_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VERIFICATION CODE"
+                android:textColor="#B388FF"
+                android:textSize="11sp"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="20dp" />
+
+            <!-- OTP Input boxes (6 digits) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="28dp">
+
+                <EditText
+                    android:id="@+id/otp1"
+                    android:layout_width="40dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_otp_box"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/otp2"
+                    android:layout_width="40dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_otp_box"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/otp3"
+                    android:layout_width="40dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_otp_box"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/otp4"
+                    android:layout_width="40dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_otp_box"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/otp5"
+                    android:layout_width="40dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_otp_box"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/otp6"
+                    android:layout_width="40dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/bg_otp_box"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Verify button -->
+            <Button
+                android:id="@+id/btn_verify_code"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/btn_primary"
+                android:elevation="0dp"
+                android:letterSpacing="0.08"
+                android:stateListAnimator="@null"
+                android:text="VERIFY CODE"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Resend -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Didn't receive the code? "
+                    android:textColor="#B0B0CC"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/btn_resend_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Resend"
+                    android:textColor="#B388FF"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Timer -->
+            <TextView
+                android:id="@+id/tv_resend_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#666699"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!-- Back to forgot -->
+        <TextView
+            android:id="@+id/btn_back_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_outline"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="16dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="◁  Back"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

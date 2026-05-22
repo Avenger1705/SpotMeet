@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpotMeet</string>
+    <string name="login_title">Welcome Back</string>
+    <string name="login_subtitle">Sign in to continue</string>
+    <string name="register_title">Create Account</string>
+    <string name="register_subtitle">Join SpotMeet today</string>
+    <string name="forgot_title">Forgot Password</string>
+    <string name="forgot_subtitle">Enter your email to reset password</string>
+    <string name="verify_title">Verify Code</string>
+    <string name="verify_subtitle">Enter the code sent to your email</string>
+    <string name="reset_title">Reset Password</string>
+    <string name="reset_subtitle">Create your new password</string>
+</resources>

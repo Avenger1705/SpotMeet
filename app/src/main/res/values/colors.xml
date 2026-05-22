@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand Colors -->
+    <color name="brand_primary">#7C4DFF</color>
+    <color name="brand_secondary">#651FFF</color>
+    <color name="brand_accent">#E040FB</color>
+    <color name="brand_light">#B388FF</color>
+
+    <!-- Background Colors -->
+    <color name="icon_bg">#1B063A</color>
+    <color name="bg_dark">#0D0D1A</color>
+    <color name="bg_card">#1A1A2E</color>
+    <color name="bg_input">#16213E</color>
+    <color name="bg_gradient_start">#0D0D1A</color>
+    <color name="bg_gradient_end">#1A1A3E</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0CC</color>
+    <color name="text_hint">#666699</color>
+    <color name="text_accent">#B388FF</color>
+
+    <!-- UI Elements -->
+    <color name="divider">#2A2A4A</color>
+    <color name="border">#3D3D6B</color>
+    <color name="error">#FF5252</color>
+    <color name="success">#69FF47</color>
+    <color name="warning">#FFD740</color>
+
+    <!-- Button Colors -->
+    <color name="btn_primary">#7C4DFF</color>
+    <color name="btn_secondary">#2A2A4A</color>
+    <color name="btn_text">#FFFFFF</color>
+
+    <!-- Overlay -->
+    <color name="overlay_dark">#80000000</color>
+    <color name="glass_bg">#1A7C4DFF</color>
+</resources>
